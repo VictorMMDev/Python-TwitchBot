@@ -4,14 +4,14 @@ The proyect uses TwichIO.
 
 This should:
 
--read chat.
+-read chat.                                                     Not Yet
 
--have commands.
+-have commands.                                                 Not Yet
 
--sub/cheer/channelpoints interaction.
+-sub/cheer/channelpoints interaction.                           Not Yet
 
--be able to play mp3 files to the pc or obs.
+-be able to play mp3 files to the pc or obs.                    Not Yet
 
--be able to show/play png/mp4 on obs.
+-be able to show/play png/mp4 on obs.                           Not Yet
 
--be SQLite compatible for possible medrating algorithms.
+-be SQLite compatible for possible medrating algorithms.        Not Yet
