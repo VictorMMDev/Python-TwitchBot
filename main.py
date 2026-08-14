@@ -109,13 +109,13 @@ class Bot(commands.Bot):
             return
         
         if media[0] is not None:
-            await self.obsmanager.showimage(SCENE_NAME, media[0], media[3], media[4], media[5], media[6], media[7], payload)
+            await self.obsmanager.showimage(SCENE_NAME, media[0], media[3], media[4], media[5], media[6], media[7])
 
         if media[1] is not None:
-            await self.obsmanager.playsoundorvideo(SCENE_NAME, media[1], media[3], payload)
+            await self.obsmanager.playsoundorvideo(SCENE_NAME, media[1], media[3])
 
         if media[2] is not None:
-            await self.obsmanager.playsoundorvideo(SCENE_NAME, media[2], media[3], media[4], media[5], media[6], media[7], payload, True)
+            await self.obsmanager.playsoundorvideo(SCENE_NAME, media[2], media[3], media[4], media[5], media[6], media[7], True)
         
         print("Received.")
         print(payload)
