@@ -1,0 +1,23 @@
+# Python / virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets
+.env
+
+# SQLite database
+database.db
+
+# VS Code
+.vscode/
+
+# Local setup
+setup.txt
+
+# media files
+obs/images/
+obs/videos/
+obs/sounds/
