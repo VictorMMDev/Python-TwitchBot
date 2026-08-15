@@ -44,21 +44,27 @@ BOT_USERNAME=The Twitch username of the bot account.
 BOT_TOKEN=The Twitch access token for the bot account.
 BOT_REFRESH=The Twitch refresh token for the bot account.
 
+
 CLIENT_ID=The Client ID of the Twitch application.
 CLIENT_SECRET=The Client Secret of the Twitch application.
+
 
 CHANNEL=The Twitch user ID of the streamer/channel (CAUTION not username, it needs the number id).
 CHANNEL_TOKEN=The Twitch access token for the streamer/channel account.
 CHANNEL_REFRESH=The Twitch refresh token for the streamer/channel account.
 
+
 BOT_ID=The Twitch user ID of the bot account (CAUTION not username, it needs the number id).
 OWNER_ID=The Twitch user ID of the bot/application owner (CAUTION not username, it needs the number id).
+
 
 OBS_HOST=The IP address or hostname of the computer running OBS (if this is all done on the same pc you can put localhost).
 OBS_PORT=The WebSocket port used by OBS.
 OBS_PASSWORD=The password used to authenticate with the OBS WebSocket server.
 
+
 SCENENAME=The name of the OBS scene that the bot uses to display media.
+
 
 
 BOT_TOKEN, BOT_REFRESH, CHANNEL_TOKEN, CHANNEL_REFRESH get loaded into the database and future tokens will be stored in the database. So PLEASE, in case you need to delete the database, change these values in .env to the current values stored in the database, as .env holds the last values you wrote, not necessarily the current valid tokens.
@@ -94,17 +100,25 @@ Down here i explain how to set up this for the first time and what you need to d
 
 Install your python version of choice, for the development of this project i used version 3.11.9 .
 
-Create virtual environment
+Create virtual environment:
+
 python -m venv .venv
 
-Activate virtual environment
+
+Activate virtual environment:
+
 .venv\Scripts\activate
 
-Install project dependencies
+
+Install project dependencies:
+
 pip install -r requirements.txt
 
-Deactivate virtual environment
+
+Deactivate virtual environment:
+
 deactivate
+
 
 
 (To run the code) CAUTION: you need to complete the AFTER SETUP section to be able to run the code
