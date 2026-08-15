@@ -1,8 +1,8 @@
-```
 INFO !!!
 
 This is a little project for gaining git, python and SQLite knowledge amongst other technologies, and to have a "simple" bot for my streams.
 
+```
 This project is published for people who want to:
 
 -Host their own Twitch bot.
@@ -10,13 +10,15 @@ This project is published for people who want to:
 -Look through the source code.
 
 -Use it as a starting point for a larger project.
+```
+
 
 If you don't have programming experience, there are many existing bots with a graphical UI that are considerably easier to configure and use.
 
 
 This project mainly uses TwitchIO, obs-websocket and SQLite.
 
-
+```
 This program is capable of:
 
 -Reading chat and executing commands from chat.
@@ -26,7 +28,7 @@ This program is capable of:
 -Playing Images/Sounds/Videos obs with size and position customization.
 
 -Storing Commands/Chat keywords , Media info , Tokens in an SQLite database.
-
+```
 
 
 
@@ -34,8 +36,8 @@ This program is capable of:
 
 NEVER share your .env file as it contains private information.
 
+```
 The database file is created by the code upon its first run. Before that, create a .env file with this structure (you can create a txt file and rename it .env):
-
 
 BOT_USERNAME=The Twitch username of the bot account.
 BOT_TOKEN=The Twitch access token for the bot account.
@@ -61,7 +63,7 @@ OBS_PASSWORD=The password used to authenticate with the OBS WebSocket server.
 
 
 SCENENAME=The name of the OBS scene that the bot uses to display media.
-
+```
 
 
 BOT_TOKEN, BOT_REFRESH, CHANNEL_TOKEN, CHANNEL_REFRESH get loaded into the database and future tokens will be stored in the database. So PLEASE, in case you need to delete the database, change these values in .env to the current values stored in the database, as .env holds the last values you wrote, not necessarily the current valid tokens.
@@ -89,7 +91,7 @@ If you make a Twitch account for the bot (HEAVILY RECOMMENDED) then you must mak
 
 
         SETUP !!!
-
+```
 Down here i explain how to set up this for the first time and what you need to do to run it:
 
 
@@ -120,13 +122,13 @@ python main.py
 
 Deactivate virtual environment (after you have shut off the bot):
 deactivate
-
+```
 
 
         AFTER SETUP !!!
 
 This part contains the information on the files not created by the SETUP process.
-
+```
 The file structure is (inside the folder you have created the virtual environment, NOT the virtual environment folder):
 
 .env
@@ -139,6 +141,5 @@ obs/
 ├── images/
 ├── sounds/
 └── videos/
-
-This code takes most of its information from an SQLite database, which means that a tool to view/change the information is needed (or you can do it all by programming your own queries), there are tons of free SQLite-compatible database viewers. I used DB Browser for SQLite while developing this program.
 ```
+This code takes most of its information from an SQLite database, which means that a tool to view/change the information is needed (or you can do it all by programming your own queries), there are tons of free SQLite-compatible database viewers. I used DB Browser for SQLite while developing this program.
