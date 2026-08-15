@@ -1,10 +1,13 @@
+```
 INFO !!!
+```
 
 This is a little project for gaining git, python and SQLite knowledge amongst other technologies, and to have a "simple" bot for my streams.
 
-```
+
 This project is published for people who want to:
 
+```
 -Host their own Twitch bot.
 
 -Look through the source code.
@@ -18,9 +21,10 @@ If you don't have programming experience, there are many existing bots with a gr
 
 This project mainly uses TwitchIO, obs-websocket and SQLite.
 
-```
+
 This program is capable of:
 
+```
 -Reading chat and executing commands from chat.
 
 -Sub/Cheer/Channelpoints interaction.
@@ -36,9 +40,10 @@ This program is capable of:
 
 NEVER share your .env file as it contains private information.
 
-```
+
 The database file is created by the code upon its first run. Before that, create a .env file with this structure (you can create a txt file and rename it .env):
 
+```
 BOT_USERNAME=The Twitch username of the bot account.
 BOT_TOKEN=The Twitch access token for the bot account.
 BOT_REFRESH=The Twitch refresh token for the bot account.
@@ -91,10 +96,10 @@ If you make a Twitch account for the bot (HEAVILY RECOMMENDED) then you must mak
 
 
         SETUP !!!
-```
+
 Down here i explain how to set up this for the first time and what you need to do to run it:
 
-
+```
 (Installation)
 
 Install your python version of choice, for the development of this project i used version 3.11.9 .
@@ -128,9 +133,10 @@ deactivate
         AFTER SETUP !!!
 
 This part contains the information on the files not created by the SETUP process.
-```
+
 The file structure is (inside the folder you have created the virtual environment, NOT the virtual environment folder):
 
+```
 .env
 main.py
 database.db (created automatically by main.py & database.py)
@@ -142,4 +148,5 @@ obs/
 ├── sounds/
 └── videos/
 ```
+
 This code takes most of its information from an SQLite database, which means that a tool to view/change the information is needed (or you can do it all by programming your own queries), there are tons of free SQLite-compatible database viewers. I used DB Browser for SQLite while developing this program.
