@@ -123,13 +123,18 @@ deactivate
 
 (To run the code) CAUTION: you need to complete the AFTER SETUP section to be able to run the code
 
-Activate virtual environment
+Activate virtual environment:
+
 .venv\Scripts\activate
 
-Run the bot
+
+Run the bot:
+
 python main.py
 
-Deactivate virtual environment (after you have shut off the bot)
+
+Deactivate virtual environment (after you have shut off the bot):
+
 deactivate
 
 
