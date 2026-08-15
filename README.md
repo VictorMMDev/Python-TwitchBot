@@ -1,6 +1,6 @@
 INFO !!!
 
-This is a little project for gaining git, python knowledge amongst other technologies, and to have a "simple" bot for my streams.
+This is a little project for gaining git, python and SQLite knowledge amongst other technologies, and to have a "simple" bot for my streams.
 
 This project is published for people who want to:
 
