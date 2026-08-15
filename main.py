@@ -68,7 +68,7 @@ class Bot(commands.Bot):
         print(f"Logged in as: ", self.user)
 
 
-    async def event_message(self, message): #Override of TwitchIO method to set print(to see if it works).
+    async def event_message(self, message):
 
         if message.chatter.id == self.bot_id: #Ignore messages from the bot..
             return

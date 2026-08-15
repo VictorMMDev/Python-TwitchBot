@@ -23,8 +23,8 @@ class OBS:
                 password=PASSWORD
             )
             print("Connected to OBS")
-        except:
-            print("Error on obs login.")
+        except Exception as e:
+            print(f"Error on obs login {e}.")
 
     def setscene(self, scene):
         self.client.set_current_program_scene(scene)
