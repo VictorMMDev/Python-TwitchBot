@@ -28,7 +28,7 @@ This program is capable of:
 
 -Playing Images/Sounds/Videos obs with size and position customization.
 
--Storing Commands/Chat keywords , Media info , Tokens on an SQLite database.
+-Storing Commands/Chat keywords , Media info , Tokens in an SQLite database.
 
 
 
@@ -61,11 +61,14 @@ OBS_PASSWORD=The password used to authenticate with the OBS WebSocket server.
 SCENENAME=The name of the OBS scene that the bot uses to display media.
 
 
+BOT_TOKEN, BOT_REFRESH, CHANNEL_TOKEN, CHANNEL_REFRESH get loaded into the database and future tokens will be stored in the database. So PLEASE, in case you need to delete the database, change these values in .env to the current values stored in the database, as .env holds the last values you wrote, not necessarily the current valid tokens.
 
 
-        BEFORE SETUP !!!
 
-The SETUP part only concerns the files. There is additional setup needed as for example the .env guide we have before, this applies beside getting the .env info the only thing needed is the creation of a Twitch application (needed for .env), and the setup of the obs WebSocket.
+
+        TAKE INTO ACCOUNT BEFORE SETUP !!!
+
+The SETUP part only concerns the files. There is additional setup needed, such as the .env setup explained above. Besides getting the .env information, the only things needed are the creation of a Twitch application (needed for .env) and the setup of the OBS WebSocket.
 
 For the obs websocket the options are on Tools -> Websocket Server settings -> Then enable the WebSocket Server and input a port (i reccommend also enabling the authentication and creating a password).
 
@@ -100,14 +103,11 @@ Activate virtual environment
 Install project dependencies
 pip install -r requirements.txt
 
-Run the bot
-python main.py
-
 Deactivate virtual environment
 deactivate
 
 
-(To run the code)
+(To run the code) CAUTION: you need to complete the AFTER SETUP section to be able to run the code
 
 Activate virtual environment
 .venv\Scripts\activate
@@ -123,4 +123,19 @@ deactivate
 
         AFTER SETUP !!!
 
-This code takes most of its information from an SQLite database, which means that a tool to view/change the information is almost needed (You can do it all by programming your own queries), there are tons of free SQLite-compatible database viewers. I used DB Browser for SQLite while developing this program.
+This part contains the information on the files not created by the SETUP process.
+
+The file structure is (inside the folder you have created the virtual environment, NOT the virtual environment folder):
+
+.env
+main.py
+database.db (created automatically by main.py & database.py)
+database.py
+obs/
+├── obs.py
+├── obsmanager.py
+├── images/
+├── sounds/
+└── videos/
+
+This code takes most of its information from an SQLite database, which means that a tool to view/change the information is needed (or you can do it all by programming your own queries), there are tons of free SQLite-compatible database viewers. I used DB Browser for SQLite while developing this program.
