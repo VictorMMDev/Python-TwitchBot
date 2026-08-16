@@ -36,6 +36,19 @@ This program is capable of:
 
 
 
+
+        FUTURE UPDATES !!!
+
+```
+UI:
+        start/stop
+        database management
+        possible .env management (channel to view, obs scene)
+```
+
+
+
+
         CAUTION !!!
 
 NEVER share your .env file as it contains private information.
